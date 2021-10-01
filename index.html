@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <link rel="stylesheet" href="survey_tesla.css">
+
 <header>
 <h1 id="title">Tell Us About The Tesla Model You Want to Buy</h1>
 <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </header>
 
 <body>
-<p id="description">Fill details to complete your order:</p>
+<p id="description"><b>Fill details to complete your order:</b></p>
 
     <form id="survey-form">
 
-        <label for="name" id="name-label">Name:</label>
-        <input id="name" type="text" name="name" placeholder="e.g. Nikola Tesla" required>
+        <div class="input-headings">
+
+        <label for="name" id="name-label"><b>Name:</b></label>
+        <input id="name" type="text" name="name" placeholder="e.g. Nikola Tesla" class="form-inputs" required>
         </input>
         <br>
 
-        <label for="email" id="email-label">Email:</label>
-        <input id="email" type="email" name="email" placeholder="nikolatesla@tesla.com" required>
+        <label for="email" id="email-label"><b>Email:</b></label>
+        <input id="email" type="email" name="email" placeholder="nikolatesla@tesla.com" class="form-inputs" required>
         </input>
         <br>
 
-        <label for="number" id="number-label">Age:</label>
-        <input id="number" type="number" name="number" placeholder="18" min="18" max="120" required style="text-align: center">
+        <label for="number" id="number-label"><b>Age:</b></label>
+        <input id="number" type="number" name="number" placeholder="18" min="18" max="120" class="form-inputs" required style="text-align: center">
         </input>
         <br>
 
-        <label for="dropdown" id="model">Select your desired model:</label>
-        <select id="dropdown">
+        <label for="dropdown" id="model"><b>Select your desired model:</b></label>
+        <select id="dropdown" class="form-inputs">
             <option value="Model_S">Model S</option>
             <option value="Model_3">Model 3</option>
             <option value="Model_X">Model X</option>
@@ -72,7 +76,8 @@
         </textarea>
         <br>
 
-        <input id="submit" type="submit" value="Place Order">  
+        <input id="submit" type="submit" value="Place Order" class="submit-button">
+        </div>
     </form>
 </body>
 </html>
